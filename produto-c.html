@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Online Farma">
+
+<link rel="icon" type="image/ico" href="img/favicon.png">
+
+<title>Online Farma</title>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+
+
+<!-- Google fonts - Carregamento Assincrono -->
+<script type="text/javascript">
+WebFontConfig = {
+google: { families: [ 'Arvo:700:latin', 'Open+Sans:400,600,700:latin' ] }
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})();
+</script>
+
+</head>
+
+<body>
+
+
+<!-- header info
+******************************************************* -->
+
+<div class="top">
+<div class="container">
+<div class="row">
+
+<div class="col-xs-12 col-sm-9">
+<div class="top__slogan">
+    Televendas &amp; SAC
+     <small>11</small> 4501-6400 ou <small>11</small> 95239-9356
+</div>
+</div><!-- col -->
+
+<div class="push-down-30 visible-xs"></div>
+
+<div class="col-xs-12 col-sm-3 text-right">
+
+<a href="#loginModal" class="btn btn-primary btn-block" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Minha Conta</a>
+
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- top -->
+
+
+<!-- modal login
+******************************************************* -->
+
+<div class="modal  fade" id="loginModal" tabindex="-1">
+
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+<h3 class="text-center">Entrar na Online Farma</h3>
+<hr class="divider">
+</div><!-- modal header -->
+
+<div class="modal-body">
+
+<form action="area-usuario.html">
+<div class="form-group">
+<input type="text" id="name" class="form-control  form-control--contact" placeholder="Email">
+</div><!-- form group -->
+
+<div class="form-group">
+<input type="text" id="subject" class="form-control  form-control--contact" placeholder="Senha">
+</div><!-- form group -->
+
+<div class="row">
+<div class="col-sm-6">
+<p><a href="esqueceu.html">Esqueceu a senha?</a></p>
+<br class="visible-xs">
+</div><!-- col -->
+<div class="col-sm-6">
+<button type="submit" class="btn  btn-primary btn-block">Entrar</button>
+</div><!-- col -->
+</div><!-- row -->
+</form>
+
+<hr class="divider">
+<h3 class="text-center">Não tem cadastro?</h3>
+<a href="cadastro.html" class="btn btn-warning btn-block">Cadastre-se Aqui</a>
+<div class="push-down-20"></div>
+
+</div><!-- modal body -->
+
+</div><!-- modal-content -->
+</div><!-- modal-dialog -->
+</div><!-- modal -->
+
+
+<!-- header
+******************************************************* -->
+
+<header class="header">
+
+<div class="container">
+<div class="row">
+
+<div class="col-xs-10 col-md-3 col-lg-3">
+<div class="header-logo">
+<a href="index.html"><img alt="Logo" src="img/logo.png"></a>
+</div><!-- header logo -->
+</div><!-- col -->
+
+<div class="col-xs-2 visible-sm visible-xs">
+<div class="navbar-header">
+
+<button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#collapsible-navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+</div><!-- navbar header -->
+</div><!-- col -->
+
+
+<!-- nav
+************ -->
+
+<div class="col-xs-12 col-md-2 col-lg-2">
+<nav class="navbar  navbar-default" role="navigation">
+
+<div class="collapse  navbar-collapse" id="collapsible-navbar">
+
+<ul class="nav  navbar-nav">
+
+<li class="dropdown">
+<a href="#" class="dropdown-toggle">Departamentos<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="departamento.html">Emagrecimento</a></li>
+<li><a href="departamento.html">Saúde Sexual</a></li>
+<li><a href="departamento.html">Saúde Feminina</a></li>
+<li><a href="departamento.html">Saúde Geral</a></li>    
+<li><a href="departamento.html">Beleza e Estética</a></li>
+<li><a href="departamento.html">Vitaminas e Suplementos</a></li>
+</ul>
+</li>
+
+</ul>
+
+<!-- carrinho mobile -->
+<div class="visible-xs visible-sm">
+    <h5>
+    <a href="carrinho.html" class="btn btn-primary btn-block">Seu Carrinho &nbsp;&nbsp;&nbsp;
+    <span class="header-cart__items"><span class="header-cart__items-num">3</span></span></a>
+    </h5>
+</div><!-- visible xs -->
+
+</div><!-- navbar-collapse -->
+</nav>
+</div><!-- col -->
+
+
+<!-- search -->
+<div class="col-xs-12 col-md-4 col-lg-5">
+
+<form action="busca.html" method="post">
+<div class="input-group search-header">
+<input type="text" class="form-control" placeholder="Faça sua Busca">
+<span class="input-group-addon">
+<button type="submit" class="mobile-navbar-form__appended-btn"><span class="glyphicon  glyphicon-search  glyphicon-search--nav"></span></button>
+</span>
+</div><!-- input group -->
+</form>
+
+</div><!-- col -->
+
+
+<!-- carrinho
+**************** -->   
+
+<div class="col-xs-12 col-md-3 col-lg-2 hidden-sm hidden-xs">
+<div class="header-cart">
+
+<span class="header-cart__text--price"><span class="header-cart__text">Seu Carrinho</span></span>
+<a href="#" class="header-cart__items"><span class="header-cart__items-num">3</span></a>
+
+<div class="header-cart__open-cart">
+
+
+    <!-- carrinho produto 1
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/rpl.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Coleus Forskohlii 300mg 60cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$79,90</div><!-- header cart price -->
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho produto 2
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/1.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Gengibre 400mg 60cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$29,00</div><!-- header cart price -->
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho produto 3
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/3.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Óleo de Coco 100mg 120cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$79,90</div>
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho total
+    ++++++++++++++++++++++ -->
+    <hr class="header-cart__divider">
+    <div class="header-cart__subtotal-box">
+    <span class="header-cart__subtotal">SUBTOTAL:</span>
+    <span class="header-cart__subtotal-price">R$188,80</span>
+    </div><!-- header cart subtotal -->
+
+<a class="btn btn-darker" href="carrinho.html">Ir para o carrinho</a>
+
+</div><!-- header cart open cart -->
+
+</div><!-- header cart -->
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+  
+</header><!-- header abriu na linha 116 -->
+
+
+<!-- breadcrumbs
+********************************************************************* -->
+
+<div class="breadcrumbs">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+
+<ol class="breadcrumb">
+<li><a href="index.html">Home</a></li>
+<li><a href="departamento.html">Saúde Sexual</a></li>
+<li class="active">Ginseng Coreano 250mg - 60 cápsulas</li>
+</ol>
+
+</div><!-- col -->
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- breadcrumbs -->
+
+
+<!-- produto
+********************************************************************* -->
+
+<div class="container">
+<div class="row">
+
+    <!-- imagem do produto -->
+    
+    <div class="col-sm-3 product-photo text-center">
+    <img src="img/produtos/single/tribulus.jpg" alt="" class="img-responsive">
+    <br class="visible-xs">
+    </div><!-- col -->
+    
+    <!-- info do produto -->
+    
+    <div class="col-sm-9">
+    <span class="products__category">Saúde Geral</span>
+    <h1 class="no-margin">Ginseng Coreano 250mg - 60 cápsulas</h1>
+    <span class="single-product__price">R$38,50</span>
+
+    <div class="in-stock--single-product">
+    <span class="in-stock">&bull;</span>
+    <span class="in-stock--text">Pronta Entrega</span>
+    </div> <!-- in stock single product -->
+    
+    <hr>
+
+    <div class="row">
+
+    <!-- opcoes do produto -->
+    <div class="col-sm-7">
+    <h5 class="no-margin">Formas de Pagamento</h5>
+    <br>
+    <img src="img/pagto-prod.jpg" class="img-responsive" alt="">
+    </div><!-- col -->
+    
+    </div><!-- row -->
+    <hr>
+
+    
+    <div class="row">
+
+    <!-- botao de compra -->
+    <div class="col-sm-8"></div>
+    <div class="col-sm-4">
+    
+    <a class="btn btn-primary--transition btn-block" href="carrinho.html">
+    <span class="glyphicon glyphicon-plus"></span>
+    <span class="glyphicon glyphicon-shopping-cart"></span>
+    Comprar
+    </a>
+    <div class="push-down-25 visible-lg"></div>
+    </div><!-- col -->
+
+    </div><!-- row -->
+
+
+</div><!-- col -->
+
+</div><!-- row -->
+
+
+<!-- tabs 
+***************************************************** --> 
+<div class="row">
+<div class="col-xs-12">
+
+<div class="push-down-30"></div>
+
+<!-- tabs -->
+<ul class="nav  nav-tabs">
+<li class="active"><a href="#tabDesc" data-toggle="tab">Informações</a></li>
+<li><a href="#tabManufacturer" data-toggle="tab">Pagamento e Envio</a></li>
+</ul>
+
+<!-- conteudo das tabs -->
+<div class="tab-content">
+
+
+<!-- conteudo da tab 1
+ +++++++++++++++ -->
+<div class="tab-pane  fade  in  active" id="tabDesc">
+<br>
+
+
+    <!-- accordion -->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+    <!-- accordion panel 1 -->
+    <div class="panel">
+    <div class="panel-heading">
+    <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#acordion_a" >
+        Tribulus Terrestris
+        </a>
+    </h2>
+    </div><!-- panel heading -->
+
+    <div id="acordion_a" class="panel-collapse collapse in">
+    <div class="panel-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </div><!-- panel body -->
+    </div><!-- panel collapse -->
+    </div><!-- panel -->
+
+
+    <!-- accordion panel 2 -->
+    <div class="panel">
+    <div class="panel-heading">
+    <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#acordion_b" >
+        Tribulus Terrestris + Creatina
+        </a>
+    </h2>
+    </div><!-- panel heading -->
+    
+    <div id="acordion_b" class="panel-collapse collapse">
+    <div class="panel-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </div><!-- panel body -->
+    </div><!-- panel collapse -->
+    </div><!-- panel -->
+    
+
+    <!-- accordion panel 3 -->
+    <div class="panel">
+    <div class="panel-heading">
+    <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#acordion_c" >
+        Tribulus Terrestris + Óleo de Coco
+        </a>
+    </h2>
+    </div><!-- panel heading -->
+
+    <div id="acordion_c" class="panel-collapse collapse">
+    <div class="panel-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </div><!-- panel body -->
+    </div><!-- panel collapse -->
+    </div><!-- panel -->
+
+    </div><!-- panel group -->
+
+</div><!-- tab pane -->
+  
+ 
+<!-- conteudo da tab 2
++++++++++++++++ -->
+<div class="tab-pane  fade" id="tabManufacturer">
+
+<div class="row">
+
+    <div class="col-md-6">
+    <h5>Formas de pagamento</h5>
+    <img src="img/pagto.jpg" class="img-responsive" alt="">
+    </div><!-- col  -->
+
+    <div class="col-md-6">
+    <h5>Formas de Envio</h5>
+    <img src="img/envio.jpg" class="img-responsive" alt="">
+    </div><!-- col  -->
+
+</div><!-- row -->
+
+</div><!-- tab pane -->
+
+</div><!-- tab content -->
+
+</div><!-- col  -->
+</div><!-- row -->
+
+
+  <!-- produtos relacionados 
+   **************************************************************** -->
+    <div class="push-down-30"></div>
+    
+    <div class="products-navigation">
+      <div class="products-navigation__title">
+        <h3><span class="light">Produtos </span> Relacionados</h3>
+      </div><!-- products navigation title -->
+    </div><!-- products navigation -->
+
+
+    <div class="row">
+
+    <!-- Produto 1
+    ************ -->
+
+    <div class="col-xs-6 col-sm-3">
+    
+    <div class="products__single">
+    <figure class="products__image">
+    <a href="produto.html"><img alt="#" class="product__image" src="img/produtos/rpl.jpg"></a>
+    
+    
+    <a class="product-overlay__more" href="produto.html"><span class="glyphicon glyphicon-search"></span></a>
+    <a class="product-overlay__cart" href="#"> +<span class="glyphicon glyphicon-shopping-cart"></span></a>
+    
+    <div class="product-overlay__stock">
+    <span class="in-stock">&bull;</span> <span class="in-stock--text">Disponível</span>
+    </div><!-- product overlay stock -->
+    
+    </figure>
+    
+    <div class="row">
+        <div class="col-xs-8">
+        <h5 class="products__title push-down-5">
+        <a class="products__link  js--isotope-title" href="produto.html">Coleus Forskohlii</a>
+        </h5>
+        </div><!-- col -->
+
+        <div class="col-xs-4">
+        <div class="products__price">R$79,90</div>
+        </div><!-- col -->
+    </div><!-- row -->
+    
+    <div class="products__size">300mg - 60 Cápsulas</div>
+    
+    </div><!-- products single -->
+    
+    </div><!-- col -->
+
+    <!-- Produto 2
+    ************ -->
+
+    <div class="col-xs-6 col-sm-3">
+    
+    <div class="products__single">
+    <figure class="products__image">
+    <a href="produto.html"><img alt="#" class="product__image" src="img/produtos/rpl.jpg"></a>
+    
+    
+    <a class="product-overlay__more" href="produto.html"><span class="glyphicon glyphicon-search"></span></a>
+    <a class="product-overlay__cart" href="#"> +<span class="glyphicon glyphicon-shopping-cart"></span></a>
+    
+    <div class="product-overlay__stock">
+    <span class="in-stock">&bull;</span> <span class="in-stock--text">Disponível</span>
+    </div><!-- product overlay stock -->
+    
+    </figure>
+    
+    <div class="row">
+        <div class="col-xs-8">
+        <h5 class="products__title push-down-5">
+        <a class="products__link  js--isotope-title" href="produto.html">Coleus Forskohlii</a>
+        </h5>
+        </div><!-- col -->
+
+        <div class="col-xs-4">
+        <div class="products__price">R$79,90</div>
+        </div><!-- col -->
+    </div><!-- row -->
+    
+    <div class="products__size">300mg - 60 Cápsulas</div>
+    
+    </div><!-- products single -->
+    
+    </div><!-- col -->
+     
+      
+    <div class="clearfix visible-xs"></div> 
+        
+        
+    <!-- Produto 3
+    ************ -->
+
+    <div class="col-xs-6 col-sm-3">
+    
+    <div class="products__single">
+    <figure class="products__image">
+    <a href="produto.html"><img alt="#" class="product__image" src="img/produtos/rpl.jpg"></a>
+    
+    
+    <a class="product-overlay__more" href="produto.html"><span class="glyphicon glyphicon-search"></span></a>
+    <a class="product-overlay__cart" href="#"> +<span class="glyphicon glyphicon-shopping-cart"></span></a>
+    
+    <div class="product-overlay__stock">
+    <span class="in-stock">&bull;</span> <span class="in-stock--text">Disponível</span>
+    </div><!-- product overlay stock -->
+    
+    </figure>
+    
+    <div class="row">
+        <div class="col-xs-8">
+        <h5 class="products__title push-down-5">
+        <a class="products__link  js--isotope-title" href="produto.html">Coleus Forskohlii</a>
+        </h5>
+        </div><!-- col -->
+
+        <div class="col-xs-4">
+        <div class="products__price">R$79,90</div>
+        </div><!-- col -->
+    </div><!-- row -->
+    
+    <div class="products__size">300mg - 60 Cápsulas</div>
+    
+    </div><!-- products single -->
+    
+    </div><!-- col -->
+        
+
+    <!-- Produto 4
+    ************ -->
+
+    <div class="col-xs-6 col-sm-3">
+    
+    <div class="products__single">
+    <figure class="products__image">
+    <a href="produto.html"><img alt="#" class="product__image" src="img/produtos/rpl.jpg"></a>
+    
+    
+    <a class="product-overlay__more" href="produto.html"><span class="glyphicon glyphicon-search"></span></a>
+    <a class="product-overlay__cart" href="#"> +<span class="glyphicon glyphicon-shopping-cart"></span></a>
+    
+    <div class="product-overlay__stock">
+    <span class="in-stock">&bull;</span> <span class="in-stock--text">Disponível</span>
+    </div><!-- product overlay stock -->
+    
+    </figure>
+    
+    <div class="row">
+        <div class="col-xs-8">
+        <h5 class="products__title push-down-5">
+        <a class="products__link  js--isotope-title" href="produto.html">Coleus Forskohlii</a>
+        </h5>
+        </div><!-- col -->
+
+        <div class="col-xs-4">
+        <div class="products__price">R$79,90</div>
+        </div><!-- col -->
+    </div><!-- row -->
+    
+    <div class="products__size">300mg - 60 Cápsulas</div>
+    
+    </div><!-- products single -->
+    
+    </div><!-- col --> 
+      
+    </div><!-- row -->
+
+</div><!-- container -->
+
+<div class="push-down-30"></div>
+ 
+ 
+<!-- categorias
+************************************************ -->
+     
+<div class="container">
+
+<div class="products-navigation  push-down-15">
+<div class="products-navigation__title">
+<h3>Categorias</h3>
+</div><!-- products navigation title -->
+</div><!-- products navigation -->
+
+<div class="row">
+<div class="col-xs-12">
+
+<div class="widgets__category">
+<ul>
+<li><a href="departamento.html">Emagrecimento</a></li>
+<li><a href="departamento.html">Saúde Sexual</a></li>
+<li><a href="departamento.html">Saúde Feminina</a></li>
+<li><a href="departamento.html">Saúde Geral</a></li>    
+<li><a href="departamento.html">Beleza e Estética</a></li>
+<li><a href="departamento.html">Vitaminas e Suplementos</a></li>
+</ul>
+</div><!-- widgets category -->
+
+</div><!-- col -->
+</div><!-- row -->
+
+</div><!-- container -->
+
+<br><br>
+
+
+<!-- footer 1 - links ancoras
+**************************************************************** -->
+
+<div class="footer-tags">
+<div class="container">
+<div class="row">
+
+<div class="col-md-12">
+<ul>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+<li><a href="#" title="">Tribulus Terrestris</a></li>
+</ul>
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- footer -->
+
+
+<!-- footer 2
+******************************************************************* -->
+
+<footer class="js--page-footer">
+<div class="footer-widgets">
+<div class="container">
+<div class="row">
+
+<!-- logo & facebook
+ ************ -->
+ 
+<div class="col-sm-12 col-md-3">
+<div class="footer-widgets__social">
+<img class="img-responsive" alt="" src="img/logo-footer.png">
+
+<p class="push-down-15">Medicamentos Naturais e Manipulados.</p>
+<a href="https://www.facebook.com"><img src="img/fb.png" alt=""></a>
+</div><!-- footer widgets -->
+</div><!-- col -->
+
+
+<!-- navigation
+ ************ -->
+ 
+<div class="col-sm-12 col-md-3">
+<nav class="footer-widgets__navigation">
+<div class="footer-wdgets__heading--line">
+<h4 class="footer-widgets__heading">Navegação</h4>
+</div><!-- footer wdgets -->
+
+<ul class="nav nav-footer">
+<li><a href="index.html">Home</a></li>
+<li><a href="sobre-nos.html">Sobre Nós</a></li>
+<li><a href="duvidas-frequentes.html">Dúvidas Frequentes</a></li>
+<li><a href="pagamento-envio.html">Pagamento e Envio</a></li>
+<li><a href="politica-entrega.html">Política de Entrega</a></li>
+<li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+<li><a href="seguranca.html">Segurança</a></li>
+<li><a href="contato.html">Contato</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+
+</nav>
+</div><!-- col -->
+
+
+<!-- formas de pagamento
+ ************ -->
+
+<div class="col-sm-12 col-md-3">
+<div class="footer-widgets__navigation">
+<div class="footer-wdgets__heading--line">
+<h4 class="footer-widgets__heading">Formas de Pagamento</h4>
+</div><!-- footer wdgets -->
+
+<img src="img/pagto-footer.png" class="img-responsive" alt="">
+
+<div class="footer-wdgets__heading--line">
+<h4 class="footer-widgets__heading">Certificados</h4>
+</div><!-- footer wdgets -->
+<img src="img/anvisa.png" class="img-responsive" alt="">
+</div><!-- footer widgets navigation -->
+</div><!-- col -->
+
+
+<!-- fale conosco
+ ************ -->
+
+<div class="col-sm-12 col-md-3">
+<div class="footer-widgets__navigation">
+<div class="footer-wdgets__heading--line">
+<h4 class="footer-widgets__heading">Fale Conosco</h4>
+</div>
+<a class="footer__link" href="#">Online Farma</a><br>
+Rua Prudente de Moraes, 47,<br>
+Santa Paula - São Caetano do Sul - SP<br>
+CEP 09541-450 <br>
+<a class="footer__link--small" href="contact-2.html">Veja o mapa <span class="glyphicon glyphicon-chevron-right glyphicon--footer-small"></span></a><br><br>
+<p>2ª a 6ª das 8h às 18h </p>
+<a class="footer__link" href="#">
+<span class="glyphicon glyphicon-earphone glyphicon--footer"></span>
+(11) 4501-6400  <br>
+<span class="glyphicon glyphicon-earphone glyphicon--footer"></span>
+(11) 95239-9356
+</a><br><br>
+<a class="footer__link" href="#"><span class="glyphicon glyphicon-envelope glyphicon--footer"></span> contato@onlinefarma.com.br</a>
+
+</div><!-- footer widgets navigation -->
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- footer widgets -->
+
+
+<!-- footer 3
+**************************************************************** -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+
+<div class="col-xs-12  col-sm-6">
+<p>
+Lopes &amp; Cardoso Farmácia de Manipulação Ltda EPP <br>
+CNPJ: 07.108.752/0001-10 / N CEVS: 354880701-477-000019-1-0 <br>  
+AE: 1.37588.8 / AFE:0.94990.1 <br>
+Certificado de regularidade: 45868 <br>
+Farmacêutico Responsável: Dra. Célia David M. Lopes <br>
+CRF/SP: 47569 - Conta (11) 4226-6770 
+</p>
+</div><!-- col -->
+
+<div class="col-xs-12  col-sm-6">
+<p>Plantas medicinais podem auxiliar no tratamento de doenças, mas devem ser usadas com orientação adequada, pois também podem causar danos à saúde. </p>
+<p>Não compre medicamentos que foram indicados por vizinhos ou amigos.</p>
+<p>Fale primeiro com seu médico.</p>
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- footer -->
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

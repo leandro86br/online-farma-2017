@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Online Farma">
+
+<link rel="icon" type="image/ico" href="img/favicon.png">
+
+<title>Online Farma</title>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/blog.css">
+
+
+<!-- Google fonts - Carregamento Assincrono -->
+<script type="text/javascript">
+WebFontConfig = {
+google: { families: [ 'Arvo:700:latin', 'Open+Sans:400,600,700:latin' ] }
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})();
+</script>
+
+</head>
+
+<body>
+
+
+<!-- header info
+******************************************************* -->
+
+<div class="top">
+<div class="container">
+<div class="row">
+
+<div class="col-xs-12 col-sm-9">
+<div class="top__slogan">
+    Televendas &amp; SAC
+     <small>11</small> 4501-6400 ou <small>11</small> 95239-9356
+</div>
+</div><!-- col -->
+
+<div class="push-down-30 visible-xs"></div>
+
+<div class="col-xs-12 col-sm-3 text-right">
+
+<a href="#loginModal" class="btn btn-primary btn-block" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Minha Conta</a>
+
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- top -->
+
+
+<!-- modal login
+******************************************************* -->
+
+<div class="modal  fade" id="loginModal" tabindex="-1">
+
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+<h3 class="text-center">Entrar na Online Farma</h3>
+<hr class="divider">
+</div><!-- modal header -->
+
+<div class="modal-body">
+
+<form action="area-usuario.html">
+<div class="form-group">
+<input type="text" id="name" class="form-control  form-control--contact" placeholder="Email">
+</div><!-- form group -->
+
+<div class="form-group">
+<input type="text" id="subject" class="form-control  form-control--contact" placeholder="Senha">
+</div><!-- form group -->
+
+<div class="row">
+<div class="col-sm-6">
+<p><a href="esqueceu.html">Esqueceu a senha?</a></p>
+<br class="visible-xs">
+</div><!-- col -->
+<div class="col-sm-6">
+<button type="submit" class="btn  btn-primary btn-block">Entrar</button>
+</div><!-- col -->
+</div><!-- row -->
+</form>
+
+<hr class="divider">
+<h3 class="text-center">Não tem cadastro?</h3>
+<a href="cadastro.html" class="btn btn-warning btn-block">Cadastre-se Aqui</a>
+<div class="push-down-20"></div>
+
+</div><!-- modal body -->
+
+</div><!-- modal-content -->
+</div><!-- modal-dialog -->
+</div><!-- modal -->
+
+
+<!-- header
+******************************************************* -->
+
+<header class="header">
+
+<div class="container">
+<div class="row">
+
+<div class="col-xs-10 col-md-3 col-lg-3">
+<div class="header-logo">
+<a href="index.html"><img alt="Logo" src="img/logo.png"></a>
+</div><!-- header logo -->
+</div><!-- col -->
+
+<div class="col-xs-2 visible-sm visible-xs">
+<div class="navbar-header">
+
+<button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#collapsible-navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+</div><!-- navbar header -->
+</div><!-- col -->
+
+
+<!-- nav
+************ -->
+
+<div class="col-xs-12 col-md-2 col-lg-2">
+<nav class="navbar  navbar-default" role="navigation">
+
+<div class="collapse  navbar-collapse" id="collapsible-navbar">
+
+<ul class="nav  navbar-nav">
+
+<li class="dropdown">
+<a href="#" class="dropdown-toggle">Departamentos<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="departamento.html">Emagrecimento</a></li>
+<li><a href="departamento.html">Saúde Sexual</a></li>
+<li><a href="departamento.html">Saúde Feminina</a></li>
+<li><a href="departamento.html">Saúde Geral</a></li>    
+<li><a href="departamento.html">Beleza e Estética</a></li>
+<li><a href="departamento.html">Vitaminas e Suplementos</a></li>
+</ul>
+</li>
+
+</ul>
+
+<!-- carrinho mobile -->
+<div class="visible-xs visible-sm">
+    <h5>
+    <a href="carrinho.html" class="btn btn-primary btn-block">Seu Carrinho &nbsp;&nbsp;&nbsp;
+    <span class="header-cart__items"><span class="header-cart__items-num">3</span></span></a>
+    </h5>
+</div><!-- visible xs -->
+
+</div><!-- navbar-collapse -->
+</nav>
+</div><!-- col -->
+
+
+<!-- search -->
+<div class="col-xs-12 col-md-4 col-lg-5">
+
+<form action="busca.html" method="post">
+<div class="input-group search-header">
+<input type="text" class="form-control" placeholder="Faça sua Busca">
+<span class="input-group-addon">
+<button type="submit" class="mobile-navbar-form__appended-btn"><span class="glyphicon  glyphicon-search  glyphicon-search--nav"></span></button>
+</span>
+</div><!-- input group -->
+</form>
+
+</div><!-- col -->
+
+
+<!-- carrinho
+**************** -->   
+
+<div class="col-xs-12 col-md-3 col-lg-2 hidden-sm hidden-xs">
+<div class="header-cart">
+
+<span class="header-cart__text--price"><span class="header-cart__text">Seu Carrinho</span></span>
+<a href="#" class="header-cart__items"><span class="header-cart__items-num">3</span></a>
+
+<div class="header-cart__open-cart">
+
+
+    <!-- carrinho produto 1
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/rpl.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Coleus Forskohlii 300mg 60cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$79,90</div><!-- header cart price -->
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho produto 2
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/1.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Gengibre 400mg 60cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$29,00</div><!-- header cart price -->
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho produto 3
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/3.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Óleo de Coco 100mg 120cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$79,90</div>
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho total
+    ++++++++++++++++++++++ -->
+    <hr class="header-cart__divider">
+    <div class="header-cart__subtotal-box">
+    <span class="header-cart__subtotal">SUBTOTAL:</span>
+    <span class="header-cart__subtotal-price">R$188,80</span>
+    </div><!-- header cart subtotal -->
+
+<a class="btn btn-darker" href="carrinho.html">Ir para o carrinho</a>
+
+</div><!-- header cart open cart -->
+
+</div><!-- header cart -->
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+  
+</header><!-- header abriu na linha 116 -->
+
+
+<!-- breadcrumbs
+********************************************************************* -->
+
+<div class="breadcrumbs">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+
+<ol class="breadcrumb">
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li class="active">Autores</li>
+</ol>
+
+</div><!-- col -->
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- breadcrumbs -->
+
+
+<!-- autores
+********************************************************************* -->
+
+<div class="container">
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3 class="no-margin">Autores</h3>
+        <hr>
+    </div><!-- col -->
+</div><!-- row -->
+
+<div class="row">
+
+
+<!-- autor 1
+**************** -->
+<div class="col-sm-4">
+<p><img src="img/blog/autor.jpg" class="img-responsive" alt=""></p>
+<span class="author"><a href="blog-author-single.html">Online Farma</a></span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+<hr>
+</div><!-- col -->
+
+<!-- autor 2
+**************** -->
+<div class="col-sm-4">
+<p><img src="img/blog/autor.jpg" class="img-responsive" alt=""></p>
+<span class="author"><a href="blog-author-single.html">Online Farma</a></span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+<hr>
+</div><!-- col -->
+
+<!-- autor 3
+**************** -->
+<div class="col-sm-4">
+<p><img src="img/blog/autor.jpg" class="img-responsive" alt=""></p>
+<span class="author"><a href="blog-author-single.html">Online Farma</a></span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+<hr>
+</div><!-- col -->
+
+</div><!-- row -->
+
+
+<div class="row">
+
+<!-- autor 4
+**************** -->
+<div class="col-sm-4">
+<hr class="visible-xs">
+<p><img src="img/blog/autor.jpg" class="img-responsive" alt=""></p>
+<span class="author"><a href="blog-author-single.html">Online Farma</a></span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+<hr>
+</div><!-- col -->
+
+<!-- autor 5
+**************** -->
+<div class="col-sm-4">
+<p><img src="img/blog/autor.jpg" class="img-responsive" alt=""></p>
+<span class="author"><a href="blog-author-single.html">Online Farma</a></span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+<hr>
+</div><!-- col -->
+
+<!-- autor 6
+**************** -->
+<div class="col-sm-4">
+<p><img src="img/blog/autor.jpg" class="img-responsive" alt=""></p>
+<span class="author"><a href="blog-author-single.html">Online Farma</a></span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+<hr>
+</div><!-- col -->
+
+</div><!-- row -->
+
+</div><!-- container -->
+  
+<div class="push-down-60"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- footer 2
+******************************************************************* -->
+
+<footer class="js--page-footer">
+<div class="footer-widgets">
+<div class="container">
+<div class="row">
+
+<!-- logo & facebook
+ ************ -->
+ 
+<div class="col-sm-12 col-md-3">
+<div class="footer-widgets__social">
+<img class="img-responsive" alt="" src="img/logo-footer.png">
+
+<p class="push-down-15">Medicamentos Naturais e Manipulados.</p>
+<a href="https://www.facebook.com"><img src="img/fb.png" alt=""></a>
+</div><!-- footer widgets -->
+</div><!-- col -->
+
+
+<!-- navigation
+ ************ -->
+ 
+<div class="col-sm-12 col-md-3">
+<nav class="footer-widgets__navigation">
+<div class="footer-wdgets__heading--line">
+<h4 class="footer-widgets__heading">Navegação</h4>
+</div><!-- footer wdgets -->
+
+<ul class="nav nav-footer">
+<li><a href="index.html">Home</a></li>
+<li><a href="sobre-nos.html">Sobre Nós</a></li>
+<li><a href="duvidas-frequentes.html">Dúvidas Frequentes</a></li>
+<li><a href="pagamento-envio.html">Pagamento e Envio</a></li>
+<li><a href="politica-entrega.html">Política de Entrega</a></li>
+<li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+<li><a href="seguranca.html">Segurança</a></li>
+<li><a href="contato.html">Contato</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+
+</nav>
+</div><!-- col -->
+
+
+<!-- formas de pagamento
+ ************ -->
+
+<div class="col-sm-12 col-md-3">
+<div class="footer-widgets__navigation">
+<div class="footer-wdgets__heading--line">
+<h4 class="footer-widgets__heading">Formas de Pagamento</h4>
+</div><!-- footer wdgets -->
+
+<img src="img/pagto-footer.png" class="img-responsive" alt="">
+
+<div class="footer-wdgets__heading--line">
+<h4 class="footer-widgets__heading">Certificados</h4>
+</div><!-- footer wdgets -->
+<img src="img/anvisa.png" class="img-responsive" alt="">
+</div><!-- footer widgets navigation -->
+</div><!-- col -->
+
+
+<!-- fale conosco
+ ************ -->
+
+<div class="col-sm-12 col-md-3">
+<div class="footer-widgets__navigation">
+<div class="footer-wdgets__heading--line">
+<h4 class="footer-widgets__heading">Fale Conosco</h4>
+</div>
+<a class="footer__link" href="#">Online Farma</a><br>
+Rua Prudente de Moraes, 47,<br>
+Santa Paula - São Caetano do Sul - SP<br>
+CEP 09541-450 <br>
+<a class="footer__link--small" href="contact-2.html">Veja o mapa <span class="glyphicon glyphicon-chevron-right glyphicon--footer-small"></span></a><br><br>
+<p>2ª a 6ª das 8h às 18h </p>
+<a class="footer__link" href="#">
+<span class="glyphicon glyphicon-earphone glyphicon--footer"></span>
+(11) 4501-6400  <br>
+<span class="glyphicon glyphicon-earphone glyphicon--footer"></span>
+(11) 95239-9356
+</a><br><br>
+<a class="footer__link" href="#"><span class="glyphicon glyphicon-envelope glyphicon--footer"></span> contato@onlinefarma.com.br</a>
+
+</div><!-- footer widgets navigation -->
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- footer widgets -->
+
+
+<!-- footer 3
+**************************************************************** -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+
+<div class="col-xs-12  col-sm-6">
+<p>
+Lopes &amp; Cardoso Farmácia de Manipulação Ltda EPP <br>
+CNPJ: 07.108.752/0001-10 / N CEVS: 354880701-477-000019-1-0 <br>  
+AE: 1.37588.8 / AFE:0.94990.1 <br>
+Certificado de regularidade: 45868 <br>
+Farmacêutico Responsável: Dra. Célia David M. Lopes <br>
+CRF/SP: 47569 - Conta (11) 4226-6770 
+</p>
+</div><!-- col -->
+
+<div class="col-xs-12  col-sm-6">
+<p>Plantas medicinais podem auxiliar no tratamento de doenças, mas devem ser usadas com orientação adequada, pois também podem causar danos à saúde. </p>
+<p>Não compre medicamentos que foram indicados por vizinhos ou amigos.</p>
+<p>Fale primeiro com seu médico.</p>
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- footer -->
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

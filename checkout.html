@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Online Farma">
+
+<link rel="icon" type="image/ico" href="img/favicon.png">
+
+<title>Online Farma</title>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+
+
+<!-- Google fonts - Carregamento Assincrono -->
+<script type="text/javascript">
+WebFontConfig = {
+google: { families: [ 'Arvo:700:latin', 'Open+Sans:400,600,700:latin' ] }
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})();
+</script>
+
+</head>
+
+<body>
+
+
+<!-- header info
+******************************************************* -->
+
+<div class="top">
+<div class="container">
+<div class="row">
+
+<div class="col-xs-12 col-sm-9">
+<div class="top__slogan">
+    Televendas &amp; SAC
+     <small>11</small> 4501-6400 ou <small>11</small> 95239-9356
+</div>
+</div><!-- col -->
+
+<div class="push-down-30 visible-xs"></div>
+
+<div class="col-xs-12 col-sm-3 text-right">
+
+<a href="#loginModal" class="btn btn-primary btn-block" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Minha Conta</a>
+
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- top -->
+
+
+<!-- modal login
+******************************************************* -->
+
+<div class="modal  fade" id="loginModal" tabindex="-1">
+
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+<h3 class="text-center">Entrar na Online Farma</h3>
+<hr class="divider">
+</div><!-- modal header -->
+
+<div class="modal-body">
+
+<form action="area-usuario.html">
+<div class="form-group">
+<input type="text" id="name" class="form-control  form-control--contact" placeholder="Email">
+</div><!-- form group -->
+
+<div class="form-group">
+<input type="text" id="subject" class="form-control  form-control--contact" placeholder="Senha">
+</div><!-- form group -->
+
+<div class="row">
+<div class="col-sm-6">
+<p><a href="esqueceu.html">Esqueceu a senha?</a></p>
+<br class="visible-xs">
+</div><!-- col -->
+<div class="col-sm-6">
+<button type="submit" class="btn  btn-primary btn-block">Entrar</button>
+</div><!-- col -->
+</div><!-- row -->
+</form>
+
+<hr class="divider">
+<h3 class="text-center">Não tem cadastro?</h3>
+<a href="cadastro.html" class="btn btn-warning btn-block">Cadastre-se Aqui</a>
+<div class="push-down-20"></div>
+
+</div><!-- modal body -->
+
+</div><!-- modal-content -->
+</div><!-- modal-dialog -->
+</div><!-- modal -->
+
+
+<!-- header
+******************************************************* -->
+
+<header class="header">
+
+<div class="container">
+<div class="row">
+
+<div class="col-xs-10 col-md-3 col-lg-3">
+<div class="header-logo">
+<a href="index.html"><img alt="Logo" src="img/logo.png"></a>
+</div><!-- header logo -->
+</div><!-- col -->
+
+<div class="col-xs-2 visible-sm visible-xs">
+<div class="navbar-header">
+
+<button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#collapsible-navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+</div><!-- navbar header -->
+</div><!-- col -->
+
+
+<!-- nav
+************ -->
+
+<div class="col-xs-12 col-md-2 col-lg-2">
+<nav class="navbar  navbar-default" role="navigation">
+
+<div class="collapse  navbar-collapse" id="collapsible-navbar">
+
+<ul class="nav  navbar-nav">
+
+<li class="dropdown">
+<a href="#" class="dropdown-toggle">Departamentos<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="departamento.html">Emagrecimento</a></li>
+<li><a href="departamento.html">Saúde Sexual</a></li>
+<li><a href="departamento.html">Saúde Feminina</a></li>
+<li><a href="departamento.html">Saúde Geral</a></li>    
+<li><a href="departamento.html">Beleza e Estética</a></li>
+<li><a href="departamento.html">Vitaminas e Suplementos</a></li>
+</ul>
+</li>
+
+</ul>
+
+<!-- carrinho mobile -->
+<div class="visible-xs visible-sm">
+    <h5>
+    <a href="carrinho.html" class="btn btn-primary btn-block">Seu Carrinho &nbsp;&nbsp;&nbsp;
+    <span class="header-cart__items"><span class="header-cart__items-num">3</span></span></a>
+    </h5>
+</div><!-- visible xs -->
+
+</div><!-- navbar-collapse -->
+</nav>
+</div><!-- col -->
+
+
+<!-- search -->
+<div class="col-xs-12 col-md-4 col-lg-5">
+
+<form action="busca.html" method="post">
+<div class="input-group search-header">
+<input type="text" class="form-control" placeholder="Faça sua Busca">
+<span class="input-group-addon">
+<button type="submit" class="mobile-navbar-form__appended-btn"><span class="glyphicon  glyphicon-search  glyphicon-search--nav"></span></button>
+</span>
+</div><!-- input group -->
+</form>
+
+</div><!-- col -->
+
+
+<!-- carrinho
+**************** -->   
+
+<div class="col-xs-12 col-md-3 col-lg-2 hidden-sm hidden-xs">
+<div class="header-cart">
+
+<span class="header-cart__text--price"><span class="header-cart__text">Seu Carrinho</span></span>
+<a href="#" class="header-cart__items"><span class="header-cart__items-num">3</span></a>
+
+<div class="header-cart__open-cart">
+
+
+    <!-- carrinho produto 1
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/rpl.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Coleus Forskohlii 300mg 60cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$79,90</div><!-- header cart price -->
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho produto 2
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/1.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Gengibre 400mg 60cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$29,00</div><!-- header cart price -->
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho produto 3
+    ++++++++++++++++++++++ -->
+    <div class="header-cart__product  clearfix">
+    <div class="header-cart__product-image"><img alt="" src="img/produtos/3.jpg" width="40" height="50"></div>
+
+    <div class="header-cart__product-image--hover">
+    <a href="#"><span class="glyphicon glyphicon-circle glyphicon-remove"></span></a>
+    </div><!-- header cart product  image hover --> 
+
+    <div class="header-cart__product-title">
+    <a class="header-cart__link" href="produto.html">Óleo de Coco 100mg 120cap</a>
+    <span class="header-cart__qty">Qtd: 1</span>
+    </div><!-- header cart product  title -->
+
+    <div class="header-cart__price">R$79,90</div>
+    </div><!-- header cart product -->
+
+
+    <!-- carrinho total
+    ++++++++++++++++++++++ -->
+    <hr class="header-cart__divider">
+    <div class="header-cart__subtotal-box">
+    <span class="header-cart__subtotal">SUBTOTAL:</span>
+    <span class="header-cart__subtotal-price">R$188,80</span>
+    </div><!-- header cart subtotal -->
+
+<a class="btn btn-darker" href="carrinho.html">Ir para o carrinho</a>
+
+</div><!-- header cart open cart -->
+
+</div><!-- header cart -->
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+  
+</header><!-- header abriu na linha 116 -->
+
+
+<!-- breadcrumbs
+********************************************************************* -->
+
+<div class="breadcrumbs">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<nav>
+<ol class="breadcrumb">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="carrinho.html">Carrinho</a></li>
+
+<li class="active">Pagamento</li>
+
+</ol>
+</nav>
+</div><!-- col -->
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- breadcrumbs -->
+
+
+<form action="pedido-finalizado.html">
+<div class="container">
+<div class="row">
+
+
+<!-- dados pessoais
+********************************************************************* -->
+
+<div class="col-sm-4">
+
+<h3 class="no-margin"><span class="light">Dados </span> Pessoais</h3><br>
+
+<div class="frame checkout">
+<div class="form-design">
+
+<div class="form-group">
+<label>Nome Completo <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group --> 
+
+<div class="form-group">
+<label>Email <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group --> 
+
+<div class="form-group">
+<label>CPF <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group --> 
+
+<div class="form-group">
+<label>Telefone <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group --> 
+
+<div class="form-group">
+<label>Celular</label>
+<input class="input-text">
+</div><!-- form group --> 
+
+<div class="form-group">
+<label>Senha <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group --> 
+
+<div class="form-group">
+<label>Repetir Senha <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group --> 
+           
+</div><!-- form-design -->
+</div><!-- frame -->
+
+</div><!-- col -->
+<br class="visible-xs">
+
+
+<!-- endereço de entrega
+********************************************************************* -->
+
+<div class="col-sm-4">
+
+<h3 class="no-margin"><span class="light">Endereço </span>de Entrega</h3><br>
+
+<div class="frame checkout">
+<div class="form-design">
+
+<div class="form-group">
+<label>CEP <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group -->    
+    
+<div class="form-group">
+<label>Nome do Destinatário <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group -->
+    
+<div class="form-group">
+<label>Telefone do Destinatário <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group -->
+
+<div class="form-group">
+<label>Endereço <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group -->
+
+<div class="row">
+<div class="col-sm-4">
+<div class="form-group">
+<label>Número <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group -->
+</div><!-- col -->
+
+<div class="col-sm-8">
+<div class="form-group">
+<label>Complemento</label>
+<input class="input-text">
+</div><!-- form group -->
+
+</div><!-- col -->
+</div><!-- row -->
+
+<div class="form-group">
+<label>Bairro <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group -->
+
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label>Cidade <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group -->
+</div><!-- col -->
+
+<div class="col-sm-6">
+<div class="form-group">
+<label>Estado <b class="required">*</b></label>
+<input class="input-text">
+</div><!-- form group -->
+</div><!-- col -->
+</div><!-- row -->
+
+<div class="form-group">
+<label>Observação</label> 
+<textarea class="input-text" rows="3"></textarea>
+</div><!-- form group -->
+</div><!-- form-design -->
+</div><!-- frame -->
+
+<br>
+
+<a href="" class="btn btn-default ">Usar outro endereço</a>
+<br><br>
+
+</div><!-- col -->
+
+
+<!-- seu pedido
+********************************************************************* -->
+
+<div class="col-sm-4">
+
+<h3 class="no-margin"><span class="light">Seu</span> Pedido</h3><br>
+
+<div class="frame">
+
+<p><strong>Produto(s):</strong></p>
+
+<!-- produto 1
+***************************** -->
+<p>Tribulus terrestris + oleo de cartamo 250mg</p>
+<p class="text-right">
+<strong>Quantidade:</strong> 3 <br>
+<strong>Sub-Total:</strong> R$ 855,00
+</p>
+
+<hr>
+
+<!-- produto 2
+***************************** -->
+<p>Spirulina 800mg</p>
+<p class="text-right">
+<strong>Quantidade:</strong> 1 <br>
+<strong>Sub-Total:</strong> R$ 25,00
+</p>
+
+<hr>
+
+<!-- subtotal
+***************************** -->
+<p class="text-right">
+<strong>Valor do Frete:</strong> R$ 10,00 <br>
+<strong>Tipo do Frete: </strong> Motoboy <br>
+</p>
+
+<!-- total 
+***************************** -->
+<h4 class="text-right text-primary">Valor Total: R$ 4.570,00</h4>
+
+</div><!-- frame -->
+
+
+<!-- forma de pagamento
+********************************************************************* -->
+
+<h3><span class="light">Forma</span> de Pagamento</h3>
+
+<div class="frame">
+<div class="form-design">
+
+<label for="credito">
+<input type="radio" id="credito" name="pagto">
+Cart&atilde;o de Cr&eacute;dito
+</label>
+<br>
+
+<label for="debito">
+<input type="radio" id="debito" name="pagto">
+D&eacute;bito Online
+</label>
+<br>
+
+<label for="Boleto">
+<input type="radio" id="Boleto" name="pagto">
+Boleto Banc&aacute;rio
+</label>
+
+<br><br>
+
+<!-- cartao de credito
+********************************************************************* -->
+
+<div class="form-group">
+<label for="">Parcelas</label>
+<select class="input-text">
+<option>A Vista R$ 99,99</option>
+<option>2x de R$ 99,99</option>
+<option>3x de R$ 99,99</option>
+<option>4x de R$ 99,99</option>
+<option>5x de R$ 99,99</option>
+</select>
+</div><!-- form group -->
+
+<div class="form-group">
+<label>Número do Cartão <b class="required">*</b></label>
+<input type="text" class="input-text">
+</div><!-- form group -->
+
+<div class="form-group">
+<label>Nome Impresso no Cartão <b class="required">*</b></label>
+<input type=text class="input-text">
+</div><!-- form group -->
+
+<div class="form-group">
+<label>Nome do Titular do Cartão <b class="required">*</b></label>
+<input type=text class="input-text">
+</div><!-- form group -->
+
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label>Mês <b class="required">*</b></label>
+<select class="input-text">
+<option>Mês</option>
+<option>01</option>
+<option>02</option>
+<option>03</option>
+<option>04</option>
+<option>05</option>
+<option>06</option>
+<option>07</option>
+<option>08</option>
+<option>09</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+</div><!-- form group -->
+</div><!-- COL -->
+
+<div class="col-sm-6">
+<div class="form-group">
+<label>Ano <b class="required">*</b></label>
+<select class="input-text">
+<option>Ano</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+<option>2027</option>
+<option>2028</option>
+</select>
+</div><!-- form group -->
+</div><!-- COL -->
+</div><!-- ROW -->
+
+<div class="form-group">
+<label>Código de Segurança <b class="required">*</b></label>
+<input type=text class="input-text">
+</div><!-- form group -->
+
+
+<!-- botao pagamento
+***************************** -->
+<button type="submit" class="btn btn-primary btn-block">Finalizar Compra</button>
+
+</div><!-- form design -->
+</div><!-- frame -->
+
+</div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
+</form>
+
+<div class="push-down-50"></div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
